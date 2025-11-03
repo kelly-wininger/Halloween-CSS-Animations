@@ -1,15 +1,15 @@
 /*This code is to style the buttons... 
 feel free to change style but do not delete these*/
 .choose button{
-    background-color: rgb(6, 6, 6);
+    background-color: #252c49;
     font-size:30px;
     padding: 2%;
-    font-family: Eater;
+    font-family: tahoma;
     text-decoration: none;
 }
 .choose button a{
     text-decoration: none;
-  color: orange;
+  color: rgb(255, 255, 255);
 }
 
 /*Add code for tutorial below this line*/

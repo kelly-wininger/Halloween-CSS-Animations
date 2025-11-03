@@ -1,35 +1,35 @@
 /*This code is to style the buttons... 
 feel free to change style but do not delete these*/
 .choose button{
-    background-color: rgb(6, 6, 6);
+    background-color: #252c49;
     font-size:30px;
     padding: 2%;
-    font-family: Eater;
+    font-family: tahoma;
     text-decoration: none;
 }
 .choose button a{
     text-decoration: none;
-  color: orange;
+  color: rgb(255, 255, 255);
 }
 
 /*Add code for tutorial below this line*/
 body {
-overflow: hidden;
-height: 100vh;
-width: 100vw;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0;
-background: #424f6f
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #424f6f
 }
 
 #container {
   width: 400px;
   height: 400px;
-padding: 0;
-box-sizing: border-box;
-background: #424f6f;
+  padding: 0;
+  box-sizing: border-box;
+  background: #424f6f;
 }
 
 *:after,
@@ -37,34 +37,33 @@ background: #424f6f;
   box-sizing: inherit;
 }
 #spooky {
-margin: 10% auto;
+  margin: 10% auto;
   width: 80%;
   height: 80%;
-animation: floaty 2s infinite;  
+  animation: floaty 2s infinite;  
 }
 
 #spooky #body {
   position: relative;
-  margin: 50x auto 0;
+  margin: 30x auto 0;
   width: 180px;
   height: 200px;
-  background: #f2fbf1
-  border-top-right-radius; 90px;
-    border-top-right-radius; 90px;
-  border-top-left-radius; 90px;
+  background: #f2fbf1;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
 }
 #spooky #body:before,
 #spooky #body:after {
-content '';
+  content: '';
   position: absolute;
-top: 130px;
-display: inline-block;
-width: 36px;
-height: 36px;
-border-radius: 50%;
-background: #f2fbf1
-animation: floaty .2s infinite;
-animation: floaty .2s infinite;
+  top: 130px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f2fbf1;
+  animation: floaty .2s infinite;
+
 }
 
 #spooky #body:before {
@@ -74,20 +73,84 @@ animation: floaty .2s infinite;
   right: -18px;
 }
 #spooky #body #eyes {
-display: flex;
-justify-content: space-between;
-margin: 0 auto;
-padding: 90px 0 0;
-width: 90px;
-height: 20px
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 90px 0 0;
+  width: 90px;
+  height: 20px
 }
 #spooky #body #eyes:before,
-#spooky #body #eyes:after, {
-  content '';
+#spooky #body #eyes:after {
+  content: '';
   display: block;
   width: 30px;
   height: 30px;
   background: #252c49;
   border-radius: 50%;
 }
-4:25
+
+#spooky #body #mouth {
+  background: #252c49;
+  margin: 25px auto 0;
+  width: 60px;
+  height: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#spooky #body #mouth::before {
+content: '';
+  display:block;
+  background: #fff;
+  margin-left: 20%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+}
+
+#spooky #body #feet {
+  position: absolute;
+  display: flex;
+  bottom: -18px;
+  width: 18px;
+  height: 36px;
+}
+
+#spooky #body #feet > *,
+#spooky #body #feet::before
+#spooky #body #feet::after {
+  content: '';
+  width: 36px;
+  height: 36px;
+  background: #f2fbf1;
+  border-radius: 50%;
+}
+
+#shadow {
+  margin: -90px auto 0;
+  background: #252c49;
+  width: 180px;
+  height: 40px;
+  border-radius: 50%;
+  animation: zoomy 2s infinite;
+
+}
+
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes zoomy {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+}
