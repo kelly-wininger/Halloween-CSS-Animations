@@ -85,3 +85,57 @@ html {
   border-top-color: #000;
   border-radius: 40px 40px 0 0;
 }
+
+.spider .legs.left {
+  left:-70%;
+}
+
+.spider .legs.right {
+  right:-70%;
+}
+
+.legs.left .leng:nth-child(1) {
+  transform: rotate(10deg);
+  margin-left: 10px;
+}
+
+.legs.right .leg:nth-child(1) {
+  transform: rotate(-10deg);
+  margin-left: -10px;
+}
+
+.legs.left .leg:nth-child(2) {
+  transform: rotate(-20deg);
+  margin-left: 20px;
+}
+
+.legs.right .leg:nth-child(2) {
+  transform: rotate(20deg);
+  margin-left: -20px;
+}
+
+.legs.left .leg:nth-child(3) {
+  transform: rotate(-50deg);
+  margin-left: 30px;
+}
+.legs.right .leg:nth-child(3) {
+  transform: rotate(50deg);
+  margin-left: -30px;
+}
+@keyframes look {
+  0%, 40%, 100% {
+    transform: translateX(0);
+  }
+  45%, 95% {
+    transform: translateX(-110px);
+  }
+}
+
+@keyframes swing {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+}
